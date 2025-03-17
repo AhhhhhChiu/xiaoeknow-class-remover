@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Class Remover",
+  "version": "1.0",
+  "content_scripts": [{
+    "matches": ["https://*.h5.xiaoeknow.com/*"],
+    "js": ["content_script.js"],
+    "run_at": "document_end"
+  }],
+  "permissions": ["activeTab", "scripting"]
+}
